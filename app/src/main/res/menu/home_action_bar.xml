@@ -1,0 +1,59 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        android:title="@string/filter"
+        app:showAsAction="ifRoom">
+        <menu>
+
+            <group
+                android:id="@+id/sort"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/default_sort"
+                    android:title="@string/default_sort"
+                    android:checked="true"
+                    />
+                <item
+                    android:id="@+id/high"
+                    android:title="@string/high_to_low" />
+                <item
+                    android:id="@+id/low"
+                    android:title="@string/low_to_high" />
+            </group>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/all"
+                    android:title="@string/all"
+                    android:checked="true"/>
+                <item
+                    android:id="@+id/beverage"
+                    android:title="@string/beverage"/>
+                <item
+                    android:id="@+id/canned"
+                    android:title="@string/canned"/>
+                <item
+                    android:id="@+id/condiment"
+                    android:title="@string/condiment"/>
+                <item
+                    android:id="@+id/grocery"
+                    android:title="@string/grocery"/>
+                <item
+                    android:id="@+id/snack"
+                    android:title="@string/snack"/>
+            </group>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"/>
+
+</menu>

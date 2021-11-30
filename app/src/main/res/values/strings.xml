@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CS 3130 - Assignmnet 2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="the_grocery_store">The Grocery Store</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="sku">SKU</string>
+    <string name="price">Price</string>
+    <string name="product_icon">Product Icon</string>
+    <string name="zero">0</string>
+    <string name="high_to_low">High to Low</string>
+    <string name="low_to_high">Low to High</string>
+    <string name="beverage">Beverage</string>
+    <string name="snack">Snack</string>
+    <string name="grocery">Grocery</string>
+    <string name="condiment">Condiment</string>
+    <string name="canned">Canned</string>
+    <string name="default_sort">Default</string>
+    <string name="all">All</string>
+    <string name="total">Total: $</string>
+    <string name="your_order_has_been_placed">Your order has been placed!</string>
+</resources>
