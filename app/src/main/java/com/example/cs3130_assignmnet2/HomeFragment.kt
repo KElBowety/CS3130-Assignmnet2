@@ -8,6 +8,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.cs3130_assignmnet2.FirebaseUtils.firebaseAuth
 import com.google.gson.Gson
 
 import com.example.cs3130_assignmnet2.databinding.FragmentHomeBinding
@@ -27,7 +28,10 @@ class HomeFragment : Fragment() {
 
         binding.myToolbar.inflateMenu(R.menu.home_action_bar)
         binding.myToolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_24)
-        binding.myToolbar.setNavigationOnClickListener { Navigation.findNavController(it).navigateUp() }
+        binding.myToolbar.setNavigationOnClickListener {
+            firebaseAuth.signOut()
+            Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_logInFragment)
+        }
 
         binding.myToolbar.setOnMenuItemClickListener{
             when(it.itemId) {

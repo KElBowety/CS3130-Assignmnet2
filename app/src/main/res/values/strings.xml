@@ -25,4 +25,6 @@
     <string name="all">All</string>
     <string name="total">Total: $</string>
     <string name="your_order_has_been_placed">Your order has been placed!</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
 </resources>
